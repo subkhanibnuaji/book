@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>book</title>
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1rem; color: #111; }
-    h1 { font-size: 2rem; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem 1rem; color: #1f2937; line-height: 1.6; }
+    header { border-bottom: 1px solid #e5e7eb; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { font-size: 2.25rem; margin: 0 0 0.5rem; }
+    .desc { color: #4b5563; font-size: 1.1rem; }
+    .meta { margin-top: 1rem; }
+    .topics { margin-top: 0.5rem; }
     a { color: #2563eb; }
-    .meta { color: #666; font-size: 0.875rem; margin-top: 2rem; }
+    .repo-link { display: inline-block; margin-top: 0.5rem; font-weight: 600; }
+    article { margin-top: 2rem; }
+    article img { max-width: 100%; height: auto; }
+    article pre { overflow-x: auto; background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 0.875rem; }
   </style>
 </head>
 <body>
-  <h1>book</h1>
-  <p>GitHub Pages site for <strong>subkhanibnuaji/book</strong>.</p>
-  <p><a href="https://github.com/subkhanibnuaji/book">View repository →</a></p>
-  <p class="meta">Generated at 2026-06-22T02:28:39.830Z</p>
+  <header>
+    <h1>book</h1>
+    <p class="desc">A textbook on informal homotopy type theory</p>
+    <div class="meta">
+      <a class="repo-link" href="https://github.com/subkhanibnuaji/book">View repository →</a>
+      
+    </div>
+  </header>
+  <article>
+    <p>This is a textbook on informal homotopy type theory.<br>
+It is part of the <a href="http://www.math.ias.edu/sp/univalent" rel="nofollow">Univalent foundations of mathematics</a><br>
+project that took place at the Institute for Advanced Study in 2012/13.</p>
+<h2>License</h2>
+<p>This work is licensed under the<br>
+<a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+<h2>Distribution</h2>
+<p>Compiled and printed versions of the book are available at the<br>
+<a href="http://homotopytypetheory.org/book" rel="nofollow">homotopy type theory website</a>,<br>
+and nightly builds are available on the<br>
+<a href="https://github.com/HoTT/book/wiki/Nightly-Builds">github wiki</a>.</p>
+<h2>Editing the book</h2>
+<p>This book is not a community project, but we do welcome our readers to suggest improvements. The best way to propose an edit is to <a href="https://github.com/HoTT/book/compare">open a pull request</a> with your suggested change. You can also <a href="https://github.com/HoTT/book/issues/new/choose">open an issue</a> if you do not have a concrete proposal yet. The issues and the pull requests are dedicated to improvements, questions, and other issues pertaining to the HoTT book itself. General discussions about homotopy type theory and topics related to the wider HoTT community are welcome at the <a href="https://groups.google.com/g/homotopytypetheory" rel="nofollow">homotopytypetheory google group</a> or at the <a href="https://hott.zulipchat.com" rel="nofollow">HoTT zulip</a>. For further directions about editing the book, see the <a href="https://github.com/HoTT/book/blob/master/CONTRIBUTING.md">guidelines for contributions</a></p>
+<h2>Code of conduct</h2>
+<p>For many, the HoTT book is their introduction to our subject and our diverse community, including people from any nationality, gender identity, sexual orientation, race, color, ability, and background. In order to ensure for everyone a welcoming and inclusive environment in our discussions, we follow the guidelines of the <a href="https://docs.github.com/en/site-policy/github-terms/github-community-forum-code-of-conduct">GitHub code of conduct</a>. You can expect from the authors and any participant that we are kind and respectful in discussions, that we use inclusive language, and that we do our best to understand each other's different perspectives. It might not always be that we accept the change in the way you proposed it, but we always value your input, regardless of your level of experience or status within the community.</p>
+<h2>Prerequisites and compilation</h2>
+<p>To compile the book for yourself you need a fairly new version of LaTeX.<br>
+<a href="http://www.tug.org/texlive/" rel="nofollow">Texlive</a> 2012 is confirmed to work. You might need<br>
+to install some packages; see <code class="notranslate">main.tex</code> for packages that are used by the book.</p>
+<p><a href="http://www.tug.org/mactex/morepackages.html" rel="nofollow">BasicTeX</a>, which is a minimalistic<br>
+version of MacTeX, is confirmed to work once the following packages have been<br>
+installed: <code class="notranslate">tlmgr</code>, <code class="notranslate">install</code>, <code class="notranslate">braket</code>, <code class="notranslate">comment</code>, <code class="notranslate">courier</code>, <code class="notranslate">enumitem</code>,<br>
+<code class="notranslate">helvetic</code>, <code class="notranslate">mathpazo</code>, <code class="notranslate">nextpage</code>, <code class="notranslate">ntheorem</code>, <code class="notranslate">palatino</code>, <code class="notranslate">rsfs</code>, <code class="notranslate">stmaryrd</code>,<br>
+<code class="notranslate">symbol</code>, <code class="notranslate">titlesec</code>, <code class="notranslate">wallpaper</code>, <code class="notranslate">wasy</code>, <code class="notranslate">wasysym</code>, <code class="notranslate">xstring</code>, <code class="notranslate">zapfding</code>.</p>
+<p>You also need the <code class="notranslate">make</code> utility. The book is a fairly complex piece of LaTeX<br>
+code. Also, the file <code class="notranslate">version.tex</code> is generated on the fly, so you will need the<br>
+<code class="notranslate">make</code> utility with which you can compile the main files, as follows:</p>
+<ul>
+<li><code class="notranslate">make hott-online.pdf</code> -- the book appropriate for online reading, with colors and green links</li>
+<li><code class="notranslate">make hott-ebook.pdf</code> -- the book with small margins, suitable for ebook readers</li>
+<li><code class="notranslate">make hott-ebook-wide.pdf</code> -- the book with small margins, suitable for ebook readers, wider page</li>
+<li><code class="notranslate">make hott-ebook-narrow.pdf</code> -- the book with small margins, suitable for ebook readers, narrower page</li>
+<li><code class="notranslate">make hott-letter.pdf cover-letter.pdf</code> -- the book in black &amp; white, letter paper format,<br>
+for printing at home, as well as a color cover (just two pages)</li>
+<li><code class="notranslate">make hott-a4.pdf cover-a4.pdf</code> -- the book in black &amp; white, A4 paper format,<br>
+for printing at home, as well as a color cover (just two pages)</li>
+<li><code class="notranslate">make hott-arxiv.pdf</code> -- the version that is uploaded to arXiv</li>
+<li><code class="notranslate">make hott-letter-exercises.pdf</code> -- the book in black &amp; white, letter paper format, but with exercises one-per-page</li>
+<li><code class="notranslate">make hott-a4-exercises.pdf</code> -- the book in black &amp; white, A4 paper format, but with exercises one-per-page</li>
+<li><code class="notranslate">make hott-ustrade.pdf cover-lulu-hardcover.pdf cover-lulu-paperback.pdf</code> --<br>
+the book in US Trade format, without cover, used for the bound copy available<br>
+at <a href="http://lulu.com/" rel="nofollow">http://lulu.com/</a></li>
+<li><code class="notranslate">make exercise_solutions.pdf</code> -- (some) solutions to exercises</li>
+<li><code class="notranslate">make errata.pdf</code> -- errata for the HoTT Book, first edition</li>
+</ul>
+<p>Note: once <code class="notranslate">make</code> is run so that <code class="notranslate">version.tex</code> is generated, you need not run <code class="notranslate">make</code> every time you make<br>
+a change to the source file. You can just perform the usual LaTeX cycle from your favorite editor.</p>
+<h4>Compiling without <code class="notranslate">make</code></h4>
+<p>If you do not have <code class="notranslate">make</code> (for example, because you are on MacOS and you did not<br>
+install the XCode command-line utilities), you can still fake it as follows.<br>
+Create the file <code class="notranslate">version.tex</code> and put in it (where "Joe Hacker" should be<br>
+replaced with your name):</p>
+<pre class="notranslate"><code class="notranslate">\newcommand{\OPTversion}{Joe-Hacker-version}
+</code></pre>
+<p>Then use whatever tools you normally do to compile LaTeX. The main LaTeX files are called<br>
+<code class="notranslate">hott-XXX.tex</code>. But you really should have <code class="notranslate">make</code>, you know.</p>
+  </article>
+  <footer>
+    Generated at 2026-06-28T13:59:09.995Z
+  </footer>
 </body>
 </html>
